@@ -1,0 +1,39 @@
+# 🖼️ Image Enhancement & Super-Resolution Workflow  
+
+This is a **ComfyUI-based image enhancement workflow** 🚀, designed for **high-quality optimization** and **super-resolution processing** of input images.  
+The workflow adopts a **tile-based processing strategy** 🧩 combined with advanced AI models 🤖, enabling significant improvements in **image clarity, details, and overall quality**—while faithfully preserving the original characteristics.  
+
+---
+
+## ✨ Features & Functions  
+
+This workflow mainly implements the following capabilities:  
+
+- 📥 Load input images and perform initial size adjustment  
+- 🔍 Upscale images using **super-resolution models**  
+- 🧩 Split images into tiles to adapt to model processing capabilities  
+- 🎨 Enhance each tile with **Flux-series AI models**  
+- 🔄 Refine image details via **VAE encoding & decoding**  
+- 🖼️ Reassemble processed tiles into the final high-quality output  
+
+### 🔧 Processing Highlights  
+- 🧩 **Tile-based processing** → supports large/high-resolution input images  
+- 🎯 **Low denoising strength (0.22)** → prioritizes preserving original features  
+- ⚡ **Multiple advanced models combined** → enhance details while upscaling  
+- 🏞️ Produces **fine-grained, high-quality results** suitable for professional use  
+
+---
+
+## 📂 Model Weights  
+
+The workflow uses the following pre-trained models:  
+
+- 🟢 **VAE model**: [flux-vae-bf16.safetensors](https://huggingface.co/Kijai/flux-fp8/blob/main/flux-vae-bf16.safetensors)  
+- 🔵 **UNet model**: [flux1-dev-fp8-e5m2.safetensors](https://huggingface.co/Kijai/flux-fp8/blob/main/flux1-dev-fp8-e5m2.safetensors)  
+- 📝 **CLIP model 1**: [t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/fmoraes2k/t5xxl_fp8_e4m3fn.safetensors/blob/main/t5xxl_fp8_e4m3fn.safetensors)  
+- 📐 **CLIP model 2**: [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336/blob/main/pytorch_model.bin)  
+- 🔍 **Super-resolution model**: [4x-UltraSharp.pth](https://huggingface.co/Afizi/4x-UltraSharp.pth/blob/main/4x-UltraSharp.pth)  
+
+---
+
+💡 With this workflow, you can effortlessly turn **ordinary images → crystal-clear, high-resolution outputs** ✨  
